@@ -6,7 +6,7 @@
 /*   By: student@42 <@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 14:43:06 by student@42        #+#    #+#             */
-/*   Updated: 2015/12/07 14:50:01 by                  ###   ########.fr       */
+/*   Updated: 2017/04/15 21:41:02 by aivanov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -490,7 +490,6 @@ int					uf_test_strtrim(void)
 		free(r);
 		return (0);
 	}
-	free(r);
 	r = ft_strtrim(str2);
     if (strcmp(r, "Bonjour") || (str2 == r))
     {
@@ -499,7 +498,6 @@ int					uf_test_strtrim(void)
 		free(r);
         return (0);
     }
-    free(r);
 	r = ft_strtrim(str3);
     if (strcmp(r, "") || (str3 == r))
     {
@@ -508,7 +506,6 @@ s pointers but have ret = \"%s\" and our: %p / your: %p\033[0m\n", __LINE__ - 2,
 		free(r);
         return (0);
     }
-    free(r);
 	return (1);
 }
 #endif
